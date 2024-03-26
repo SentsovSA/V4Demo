@@ -1,0 +1,16 @@
+PODS:
+  - DGisMobileSDK (10.2.0-full)
+
+DEPENDENCIES:
+  - DGisMobileSDK (= 10.2.0-full)
+
+SPEC REPOS:
+  trunk:
+    - DGisMobileSDK
+
+SPEC CHECKSUMS:
+  DGisMobileSDK: 5c681ed2cbea9e13ae7d1e0e684c2a1295ce756f
+
+PODFILE CHECKSUM: 479aca68172d4b50ec544ffdf712bfcc4f4b7a88
+
+COCOAPODS: 1.15.2
