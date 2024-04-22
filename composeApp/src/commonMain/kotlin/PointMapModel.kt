@@ -1,5 +1,5 @@
 class PointMapModel (
-    val id: Long,
+    val id: Int,
     val latitude: Double,
     val longitude: Double,
     val visible: Boolean

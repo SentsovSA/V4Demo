@@ -48,6 +48,9 @@ kotlin {
             implementation(libs.compose.ui.tooling.preview)
             implementation(libs.androidx.activity.compose)
             implementation (libs.sdk.full)
+            implementation(libs.lifecycle.compose)
+            implementation(libs.lifecycle)
+            implementation(libs.play.services.maps)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -58,7 +61,9 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.koin)
             implementation(libs.koin.compose)
-            api(libs.logger)
+            implementation(libs.logger)
+            implementation(libs.voyager.navigator)
+            implementation(libs.voyager.bottomSheetNavigator)
         }
     }
 }

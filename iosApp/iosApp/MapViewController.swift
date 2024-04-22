@@ -20,7 +20,7 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         do {
-            let apiKeyOptions = ApiKeyOptions(apiKeyFile: File(path: "/Users/user/V4Demo/composeApp/src/androidMain/assets/dgissdk.key"))
+            let apiKeyOptions = ApiKeyOptions.default
             sdk = DGis.Container(apiKeyOptions: apiKeyOptions)
             var mapOptions = MapOptions.default
             mapOptions.devicePPI = .autodetected

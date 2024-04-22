@@ -15,10 +15,12 @@ compose-plugin = "1.6.1"
 junit = "4.13.2"
 kotlin = "1.9.23"
 sdkFull = "latest.release"
-playServicesMaps = "18.2.0"
+playServicesLoc = "21.2.0"
 koin-core = "3.5.3"
 koin-compose = "1.1.2"
 logger = "1.3.0"
+lifecycle = "2.7.0"
+voyager = "1.0.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -37,6 +39,12 @@ sdk-full = { group = "ru.dgis.sdk", name = "sdk-full", version.ref = "sdkFull" }
 koin = { group = "io.insert-koin", name = "koin-core", version.ref = "koin-core" }
 koin-compose = { group = "io.insert-koin", name = "koin-compose", version.ref = "koin-compose" }
 logger = {group = "org.lighthousegames", name = "logging", version.ref = "logger"}
+lifecycle-compose = {group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycle"}
+lifecycle = {group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle"}
+play-services-maps = {group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLoc" }
+voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
+voyager-bottomSheetNavigator = { module = "cafe.adriel.voyager:voyager-bottom-sheet-navigator", version.ref = "voyager" }
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

@@ -15,5 +15,5 @@ captures
 !*.xcodeproj/project.xcworkspace/
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
-/Users/user/V4Demo/composeApp/src/androidMain/assets/dgissdk.key
-/Users/user/V4Demo/iosApp/iosApp/dgissdk.key
+/iosApp/iosApp/dgissdk.key
+/composeApp/src/androidMain/assets/dgissdk.key

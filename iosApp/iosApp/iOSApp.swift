@@ -1,5 +1,4 @@
 import SwiftUI
-import DGis
 import ComposeApp
 
 @main

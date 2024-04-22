@@ -12,6 +12,7 @@
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		2499B80FE4FB8C1761C3508A /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB225B4665A5191AAA974794 /* Pods_iosApp.framework */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		CE1F3F682BB3F8BC002B2774 /* dgissdk.key in Resources */ = {isa = PBXBuildFile; fileRef = CE1F3F672BB3F8BC002B2774 /* dgissdk.key */; };
 		CE3218BB2BAD9285004BBFB7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3218BA2BAD9285004BBFB7 /* MapViewController.swift */; };
 		CE3218BD2BAD9B3D004BBFB7 /* DGisProtocolImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3218BC2BAD9B3D004BBFB7 /* DGisProtocolImpl.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB3632DC29227652001CCB65 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		CB225B4665A5191AAA974794 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1F3F672BB3F8BC002B2774 /* dgissdk.key */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = dgissdk.key; sourceTree = "<group>"; };
 		CE3218BA2BAD9285004BBFB7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CE3218BC2BAD9B3D004BBFB7 /* DGisProtocolImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGisProtocolImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE1F3F672BB3F8BC002B2774 /* dgissdk.key */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
@@ -172,6 +175,7 @@
 			files = (
 				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
 				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
+				CE1F3F682BB3F8BC002B2774 /* dgissdk.key in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,8 +400,7 @@
 					"-framework",
 					composeApp,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "${BUNDLE_ID}${TEAM_ID}";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = org.activity.v4d.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = org.activity.v4d.demo;
 				PRODUCT_NAME = "${APP_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -431,7 +434,7 @@
 					"-framework",
 					composeApp,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "${BUNDLE_ID}${TEAM_ID}";
+				PRODUCT_BUNDLE_IDENTIFIER = org.activity.v4d.demo;
 				PRODUCT_NAME = "${APP_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

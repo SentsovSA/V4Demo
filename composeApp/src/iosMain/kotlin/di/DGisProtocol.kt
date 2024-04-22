@@ -12,10 +12,6 @@ interface DGisProtocol {
 
     fun addMapListener(onPositionSelect: (latitude: Double, longitude: Double) -> Unit)
 
-    fun onMapStop()
-
-    fun onMapStart()
-
     fun onMapMove(latLng: LatLng)
 
     fun updateCustomPoint(latLng: LatLng? = null, visible: Boolean = true)
